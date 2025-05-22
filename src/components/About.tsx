@@ -21,7 +21,7 @@ const About = () => {
             <p className="dark:text-light-gray/90 text-dark-text/90 text-base">
               GenZen transforms patterns of exploitation into systems that are predictable and transformable. Protecting hundreds of millions in assets and creating pathways out of "impossible" situations by seeing what others miss.
             </p>
-            <p className="dark:text-light-gray text-dark-text font-medium text-base">Adam King, Founder</p>
+            <h3 className="dark:text-light-gray text-dark-text font-medium text-xl">Adam King, Founder</h3>
             <p className="dark:text-light-gray/90 text-dark-text/90 text-base">
               For fifteen years, I've focused on helping leaders maintain control when their power faces sophisticated attack. What began as my personal system for navigating complex power dynamics evolved into something larger when I saw these same patterns threatening others.
             </p>
