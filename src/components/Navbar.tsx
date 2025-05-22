@@ -8,9 +8,9 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <div className="w-8 h-8">
             <img 
-              src="/lovable-uploads/efdc2123-e30e-4b76-9202-5b56155783e8.png" 
+              src="/lovable-uploads/8e5b2ca9-d39e-4651-ac85-05573bceaa48.png" 
               alt="GenZen Logo" 
-              className="w-full h-full"
+              className="w-full h-full object-contain"
             />
           </div>
           <h1 className="text-lg font-normal">GenZen HQ</h1>
