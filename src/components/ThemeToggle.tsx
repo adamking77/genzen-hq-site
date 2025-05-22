@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Moon, Sun } from 'lucide-react';
+import { SunMoon } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
 
 const ThemeToggle = () => {
@@ -12,11 +12,13 @@ const ThemeToggle = () => {
       className="p-2 rounded-full transition-colors flex items-center justify-center"
       aria-label="Toggle theme"
     >
-      {theme === 'dark' ? (
-        <Sun className="h-5 w-5 text-light-gray hover:text-light-gray/80" />
-      ) : (
-        <Moon className="h-5 w-5 text-dark-text hover:text-dark-text/80" />
-      )}
+      <SunMoon 
+        className={`h-5 w-5 ${
+          theme === 'dark' 
+            ? 'text-light-gray hover:text-light-gray/80' 
+            : 'text-dark-text hover:text-dark-text/80'
+        }`} 
+      />
     </button>
   );
 };
