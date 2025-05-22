@@ -24,60 +24,27 @@ const ThemeToggle = () => {
         }`}
         stroke="currentColor"
       >
-        <path 
-          d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" 
+        {/* Circle outline */}
+        <circle 
+          cx="12" 
+          cy="12" 
+          r="10" 
           strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
+          fill="none" 
         />
+        
+        {/* Right half with lines */}
         <path 
-          d="M12 2V4" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
+          d="M12,2 A10,10 0 0 1 12,22 A10,10 0 0 1 12,2" 
+          strokeWidth="0" 
+          fill="currentColor" 
+          fillOpacity="0.2"
         />
-        <path 
-          d="M12 20V22" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M4.93 4.93L6.34 6.34" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M17.66 17.66L19.07 19.07" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M2 12H4" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M20 12H22" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M6.34 17.66L4.93 19.07" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
-        <path 
-          d="M19.07 4.93L17.66 6.34" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-        />
+        
+        {/* Lines in right half */}
+        <line x1="12" y1="5" x2="12" y2="19" strokeWidth="1.5" />
+        <line x1="16" y1="7" x2="16" y2="17" strokeWidth="1.5" />
+        <line x1="19" y1="12" x2="19" y2="12" strokeWidth="1.5" />
       </svg>
     </button>
   );
