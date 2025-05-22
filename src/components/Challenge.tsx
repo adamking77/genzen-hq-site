@@ -1,10 +1,16 @@
 
 import React from "react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Challenge = () => {
+  const animation = useScrollAnimation();
+  
   return (
     <section className="py-40 px-8 md:px-16 lg:px-32 border-t border-gray-700">
-      <div className="container mx-auto">
+      <div 
+        ref={animation.ref}
+        className={`container mx-auto animate-fade-in ${animation.isVisible ? 'visible' : ''}`}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl md:text-3xl font-normal mb-4 text-light-gray">The Challenge</h3>

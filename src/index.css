@@ -1,4 +1,5 @@
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,5 +54,21 @@
   .container {
     max-width: 1280px;
     @apply mx-auto;
+  }
+  
+  /* Animation Classes */
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animate-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-stagger-item {
+    transition-delay: calc(var(--item-index, 0) * 150ms);
   }
 }
