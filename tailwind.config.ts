@@ -20,7 +20,7 @@ export default {
     },
     extend: {
       colors: {
-        "dark-blue": "#1d2739",
+        "dark-blue": "#141c29", // Darker blue base color
         "dark-blue-light": "#2a3752",
         "light-gray": "#f4f4f5",
         border: "hsl(var(--border))",
