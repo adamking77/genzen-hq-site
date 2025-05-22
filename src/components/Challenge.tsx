@@ -3,7 +3,7 @@ import React from "react";
 
 const Challenge = () => {
   return (
-    <section className="py-32 px-6 md:px-12 lg:px-24 border-t border-gray-700">
+    <section className="py-40 px-8 md:px-16 lg:px-32 border-t border-gray-700">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>

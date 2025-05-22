@@ -19,7 +19,7 @@ const Initiatives = () => {
   ];
 
   return (
-    <section id="initiatives" className="py-32 px-6 md:px-12 lg:px-24 border-t border-gray-700">
+    <section id="initiatives" className="py-40 px-8 md:px-16 lg:px-32 border-t border-gray-700">
       <div className="container mx-auto">
         <h3 className="text-2xl md:text-3xl font-normal mb-12 text-light-gray">Current Initiatives</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
