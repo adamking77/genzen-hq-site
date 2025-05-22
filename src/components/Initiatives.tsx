@@ -2,6 +2,7 @@
 import React from "react";
 import InitiativeCard from "@/components/InitiativeCard";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import DecorativeLines from "./DecorativeLines";
 
 const Initiatives = () => {
   const animation = useScrollAnimation();
@@ -22,7 +23,8 @@ const Initiatives = () => {
   ];
 
   return (
-    <section id="initiatives" className="py-40 px-8 md:px-16 lg:px-32 border-t border-gray-700">
+    <section id="initiatives" className="py-40 px-8 md:px-16 lg:px-32 border-t border-gray-700 relative">
+      <DecorativeLines className="transform -rotate-15" />
       <div 
         ref={animation.ref}
         className={`container mx-auto animate-fade-in ${animation.isVisible ? 'visible' : ''}`}

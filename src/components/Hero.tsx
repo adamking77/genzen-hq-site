@@ -1,12 +1,14 @@
 
 import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import DecorativeLines from "./DecorativeLines";
 
 const Hero = () => {
   const animation = useScrollAnimation();
   
   return (
-    <section className="py-40 md:py-56 px-8 md:px-16 lg:px-32">
+    <section className="py-40 md:py-56 px-8 md:px-16 lg:px-32 relative">
+      <DecorativeLines />
       <div 
         ref={animation.ref}
         className={`container mx-auto text-center max-w-3xl animate-fade-in ${animation.isVisible ? 'visible' : ''}`}

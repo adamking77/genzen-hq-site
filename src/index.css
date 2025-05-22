@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,3 +71,17 @@
     transition-delay: calc(var(--item-index, 0) * 150ms);
   }
 }
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.subtle-float {
+  animation: subtleFloat 8s ease-in-out infinite;
+}
+
