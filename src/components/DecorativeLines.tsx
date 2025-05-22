@@ -8,20 +8,22 @@ interface DecorativeLinesProps {
 const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
   const circleRef = useRef<HTMLDivElement>(null);
   const compassRef = useRef<HTMLDivElement>(null);
+  const horizontalLineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (circleRef.current && compassRef.current) {
-        // Subtle movement based on scroll position
+      if (circleRef.current && compassRef.current && horizontalLineRef.current) {
         const scrollY = window.scrollY;
-        const translateY = scrollY * 0.03; // Slow movement
-        const rotate = scrollY * 0.02; // Slow rotation
-
-        // Apply subtle float to the circle
-        circleRef.current.style.transform = `translateY(${translateY}px)`;
         
-        // Apply subtle rotation to the compass element
-        compassRef.current.style.transform = `rotate(${rotate}deg)`;
+        // Calculate horizontal movement based on scroll position
+        const circleTranslateX = scrollY * -0.05; // Move left as user scrolls down
+        const compassTranslateX = scrollY * 0.04; // Move right as user scrolls down
+        const lineTranslateX = scrollY * 0.03; // Move right as user scrolls down
+        
+        // Apply horizontal movements
+        circleRef.current.style.transform = `translateX(${circleTranslateX}px)`;
+        compassRef.current.style.transform = `translateX(${compassTranslateX}px)`;
+        horizontalLineRef.current.style.transform = `translateX(${lineTranslateX}px)`;
       }
     };
 
@@ -34,7 +36,10 @@ const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
       {/* Horizontal line */}
-      <div className="absolute w-1/2 h-px bg-light-gray/10 top-1/2 left-0"></div>
+      <div 
+        ref={horizontalLineRef}
+        className="absolute w-1/2 h-px bg-light-gray/10 top-1/2 left-0 transition-transform duration-700"
+      ></div>
       
       {/* Circle */}
       <div 
