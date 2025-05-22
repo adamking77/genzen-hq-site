@@ -19,6 +19,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Hanken Grotesk', 'system-ui', 'sans-serif'],
+      },
       colors: {
         "dark-blue": "#141c29", // Darker blue base color
         "dark-blue-light": "#2a3752",
