@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 border-t border-gray-200">
+    <section id="about" className="py-20 px-6 md:px-12 lg:px-24 border-t border-gray-200">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
