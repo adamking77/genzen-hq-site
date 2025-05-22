@@ -16,18 +16,23 @@ const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
         const scrollY = window.scrollY;
         
         // Increased movement values for more noticeable animations
-        const circleTranslateX = scrollY * -0.15; // Increased from -0.05 to -0.15
-        const compassTranslateX = scrollY * 0.12; // Increased from 0.04 to 0.12
-        const lineTranslateX = scrollY * 0.09; // Increased from 0.03 to 0.09
+        // with smoother easing function for better movement
+        const circleTranslateX = scrollY * -0.2; // Further increased from -0.15 to -0.2
+        const compassTranslateX = scrollY * 0.18; // Further increased from 0.12 to 0.18
+        const lineTranslateX = scrollY * 0.14; // Further increased from 0.09 to 0.14
         
-        // Apply horizontal movements with faster transitions
+        // Apply horizontal movements with smoother transitions
         circleRef.current.style.transform = `translateX(${circleTranslateX}px)`;
         compassRef.current.style.transform = `translateX(${compassTranslateX}px)`;
         horizontalLineRef.current.style.transform = `translateX(${lineTranslateX}px)`;
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Initial call to set positions immediately
+    handleScroll();
+
+    // Use passive: true for better performance on scroll events
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -35,22 +40,22 @@ const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
 
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>
-      {/* Horizontal line */}
+      {/* Horizontal line with smoother transition */}
       <div 
         ref={horizontalLineRef}
-        className="absolute w-1/2 h-px bg-light-gray/10 top-1/2 left-0 transition-transform duration-500"
+        className="absolute w-1/2 h-px bg-light-gray/10 top-1/2 left-0 transition-transform duration-300 ease-out"
       ></div>
       
-      {/* Circle */}
+      {/* Circle with smoother transition */}
       <div 
         ref={circleRef}
-        className="absolute w-96 h-96 border border-light-gray/5 rounded-full -top-48 -right-48 transition-transform duration-500"
+        className="absolute w-96 h-96 border border-light-gray/5 rounded-full -top-48 -right-48 transition-transform duration-300 ease-out"
       ></div>
       
-      {/* Thin compass-like element */}
+      {/* Thin compass-like element with smoother transition */}
       <div 
         ref={compassRef}
-        className="absolute top-1/4 left-1/4 transition-transform duration-500"
+        className="absolute top-1/4 left-1/4 transition-transform duration-300 ease-out"
       >
         <div className="relative w-8 h-8">
           <div className="absolute w-8 h-px bg-light-gray/10 top-1/2 left-0"></div>
