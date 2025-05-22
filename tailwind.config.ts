@@ -23,8 +23,9 @@ export default {
         sans: ['Hanken Grotesk', 'system-ui', 'sans-serif'],
       },
       colors: {
-        "dark-blue": "#141c29", // Darker blue base color
-        "dark-blue-light": "#2a3752",
+        "dark-blue": "#0f1623", // Updated darker blue base color
+        "dark-blue-light": "#212a3b", // Updated lighter blue
+        "dark-blue-mid": "#181f2e", // Added middle tone
         "light-gray": "#f4f4f5",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
