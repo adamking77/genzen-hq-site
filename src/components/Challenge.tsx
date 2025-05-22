@@ -18,7 +18,7 @@ const Challenge = () => {
             <h3 className="text-2xl md:text-3xl font-normal mb-4 text-light-gray">The Challenge</h3>
           </div>
           <div>
-            <p className="text-light-gray/90">
+            <p className="text-light-gray/90 text-base">
               Every system designed to protect you can be weaponized against you. We identify these exploitation patterns before they manifest and transform them into sources of unprecedented power.
             </p>
           </div>
