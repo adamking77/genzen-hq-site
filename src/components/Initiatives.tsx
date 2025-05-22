@@ -11,13 +11,13 @@ const Initiatives = () => {
     {
       title: "Legacy Resilience",
       description: "Transforming sophisticated threats into multi-generational advantages.",
-      link: "#",
+      link: "https://genzen.solutions",
       linkText: "Visit GenZen Solutions →"
     },
     {
       title: "Leadership Resilience",
       description: "Restoring control when leadership systems turn against you.",
-      link: "#",
+      link: "https://genzen.pro",
       linkText: "Visit GenZen Pro →"
     }
   ];

@@ -21,6 +21,8 @@ const InitiativeCard = ({
       <a
         href={link}
         className="text-light-gray hover:text-light-gray/70 transition-colors text-sm"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {linkText}
       </a>
