@@ -14,13 +14,6 @@ const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
       {/* Circle */}
       <div className="absolute w-96 h-96 border border-light-gray/5 rounded-full -top-48 -right-48"></div>
       
-      {/* Small dots */}
-      <div className="absolute w-1 h-1 bg-light-gray/20 rounded-full top-1/2 left-1/2"></div>
-      <div className="absolute w-1 h-1 bg-light-gray/15 rounded-full bottom-1/4 right-1/4"></div>
-      
-      {/* Vertical line */}
-      <div className="absolute h-1/3 w-px bg-light-gray/10 bottom-0 right-1/4"></div>
-      
       {/* Thin compass-like element */}
       <div className="absolute top-1/4 left-1/4">
         <div className="relative w-8 h-8">
