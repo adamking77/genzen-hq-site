@@ -1,5 +1,3 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +11,7 @@
   }
   
   body {
-    @apply bg-gradient-to-br from-[#0f1623] via-[#181f2e] to-[#212a3b] text-light-gray;
+    @apply bg-gradient-to-br from-[#09101c] via-[#141c2a] to-[#212a3b] text-light-gray;
     line-height: 1.6;
   }
 
