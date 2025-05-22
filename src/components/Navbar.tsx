@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <div className="w-8 h-8">
             <img 
-              src="/lovable-uploads/da82ba6b-b8b8-47c6-be30-981ab5da3664.png" 
+              src="/lovable-uploads/be23b1cb-87ac-4ee0-8674-1468ab43995b.png" 
               alt="GenZen Logo" 
               className="w-full h-full object-contain"
             />
