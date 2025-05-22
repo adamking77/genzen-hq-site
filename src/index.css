@@ -11,8 +11,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  body {
+  html.dark body {
     @apply bg-gradient-to-br from-[#09101c] via-[#141c2a] to-[#212a3b] text-light-gray;
+  }
+  
+  html:not(.dark) body {
+    @apply bg-light-gray text-dark-text;
+  }
+  
+  body {
     line-height: 1.6;
   }
 
@@ -84,4 +91,3 @@
 .subtle-float {
   animation: subtleFloat 8s ease-in-out infinite;
 }
-

@@ -7,7 +7,7 @@ const Footer = () => {
   const animation = useScrollAnimation({ threshold: 0.05 });
   
   return (
-    <footer className="py-20 px-8 md:px-16 lg:px-32 border-t border-gray-700 text-center text-sm text-light-gray/70 relative">
+    <footer className="py-20 px-8 md:px-16 lg:px-32 dark:border-gray-700 border-gray-300/30 border-t text-center text-sm dark:text-light-gray/70 text-dark-text/70 relative">
       <DecorativeLines className="opacity-50" />
       <div 
         ref={animation.ref}

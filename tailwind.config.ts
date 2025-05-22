@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,10 +23,12 @@ export default {
         sans: ['Hanken Grotesk', 'system-ui', 'sans-serif'],
       },
       colors: {
-        "dark-blue": "#09101c", // Updated even darker blue base color
-        "dark-blue-light": "#212a3b", // Kept lighter blue
-        "dark-blue-mid": "#141c2a", // Adjusted middle tone
+        "dark-blue": "#09101c", // Dark blue base color
+        "dark-blue-light": "#212a3b", // Lighter blue
+        "dark-blue-mid": "#141c2a", // Middle tone
         "light-gray": "#f4f4f5",
+        "dark-text": "#222222",   // Added for light mode text
+        "line-shapes": "#1d2739", // Added for light mode line shapes
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

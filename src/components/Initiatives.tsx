@@ -23,13 +23,13 @@ const Initiatives = () => {
   ];
 
   return (
-    <section id="initiatives" className="py-40 px-8 md:px-16 lg:px-32 border-t border-gray-700 relative">
+    <section id="initiatives" className="py-40 px-8 md:px-16 lg:px-32 dark:border-gray-700 border-gray-300/30 border-t relative">
       <DecorativeLines className="transform -rotate-15" />
       <div 
         ref={animation.ref}
         className={`container mx-auto animate-fade-in ${animation.isVisible ? 'visible' : ''}`}
       >
-        <h3 className="text-3xl md:text-4xl font-normal mb-12 text-light-gray">Current Initiatives</h3>
+        <h3 className="text-3xl md:text-4xl font-normal mb-12 dark:text-light-gray text-dark-text">Current Initiatives</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {initiatives.map((initiative, index) => (
             <div 

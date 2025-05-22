@@ -43,13 +43,13 @@ const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
       {/* Horizontal line with smoother transition */}
       <div 
         ref={horizontalLineRef}
-        className="absolute w-1/2 h-px bg-light-gray/10 top-1/2 left-0 transition-transform duration-300 ease-out"
+        className="absolute w-1/2 h-px dark:bg-light-gray/10 bg-line-shapes/10 top-1/2 left-0 transition-transform duration-300 ease-out"
       ></div>
       
       {/* Circle with smoother transition */}
       <div 
         ref={circleRef}
-        className="absolute w-96 h-96 border border-light-gray/5 rounded-full -top-48 -right-48 transition-transform duration-300 ease-out"
+        className="absolute w-96 h-96 dark:border-light-gray/5 border-line-shapes/5 border rounded-full -top-48 -right-48 transition-transform duration-300 ease-out"
       ></div>
       
       {/* Thin compass-like element with smoother transition */}
@@ -58,9 +58,9 @@ const DecorativeLines = ({ className = "" }: DecorativeLinesProps) => {
         className="absolute top-1/4 left-1/4 transition-transform duration-300 ease-out"
       >
         <div className="relative w-8 h-8">
-          <div className="absolute w-8 h-px bg-light-gray/10 top-1/2 left-0"></div>
-          <div className="absolute w-px h-8 bg-light-gray/10 top-0 left-1/2"></div>
-          <div className="absolute w-2 h-2 border border-light-gray/15 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute w-8 h-px dark:bg-light-gray/10 bg-line-shapes/10 top-1/2 left-0"></div>
+          <div className="absolute w-px h-8 dark:bg-light-gray/10 bg-line-shapes/10 top-0 left-1/2"></div>
+          <div className="absolute w-2 h-2 dark:border-light-gray/15 border-line-shapes/15 border rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
         </div>
       </div>
     </div>
