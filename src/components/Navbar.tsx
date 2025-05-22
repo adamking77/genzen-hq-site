@@ -13,7 +13,7 @@ const Navbar = () => {
               className="w-full h-full object-contain"
             />
           </div>
-          <h1 className="text-lg font-normal">GenZen HQ</h1>
+          <h1 className="text-xl font-normal">GenZen HQ</h1>
         </div>
       </div>
     </header>
